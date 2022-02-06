@@ -1,179 +1,363 @@
 .navbar{
-  background-color: #0B3D59!important;
-}
-.navbar-brand img{
-  width: 20%
-}
-.navbar-nav{
-  margin-right: 50px!important;
-}
-.mynav{
-  text-decoration: white;
-}
-.nav-item{
-  display: inline-block!important;
-  width: 70%!important;
-  margin: 1em 0em;
-}
-.nav-item a{
-  color: white!important;
-  width: 130px!important;
-  text-align: center!important;
-  font-size: 14pt;
-}
-#carouselimg img{
-  height: 680px!important;
-  filter: blur(15px);
-}
-.cardcontainer #Cem_Ozar{
-    position:absolute;
-    top: 20%;
-    bottom: 20%!important;
-    width: 379.5px!important;
-    height: 452px!important;
-    left: 20%;
-    filter: blur(0px)!important;
-    border-color: black!important;
-    border: 10px !important;
-    overflow: hidden!important;
-    display: inline-block;
-}
-.para{
-    color: white;
-    font-size: 150% ;
-    display: inline-block;
-    position:absolute;
-    top: 30%;
-    bottom: 35%!important;
-    width: 40%!important;
-    height: 452px!important;
-    right: 10%;
-}
-body
-{
-    font-family: Arial, Helvetica, sans-serif!important;
-}
-iframe 
-{
-    width: 100%!important;
-    height: 100%!important;
-    height: 500px!important;
+    background-color: #0B3D59!important;
+  }
+  .navbar-brand img{
+    width: 20%
+  }
+  .navbar-nav{
+    margin-right: 50px!important;
+  }
+  .mynav{
+    text-decoration: white;
+  }
+  .nav-item{
     display: inline-block!important;
-    margin: 0 auto!important;
-}
-.form
-{
-    margin-left: 1em!important;
-    transform: scale(0.95)!important;
-}
-.contact_us .form h1
-{
-    color: black!important;
-    text-align: center!important;
-    margin-bottom: 1em!important;
-}
-.contact_us .form h3
-{
-    font-weight:400!important;
-    font-size:1.2em!important;
-    margin: 1em 0!important;
-}
-input
-{
-    width: 100%!important;
-    height: 50px!important;
-    border-radius: 5px!important;
-    border: none!important;
-    margin: 1.5em 0!important;
-    background-color: transparent!important;
-    border: 2px solid rgb(0, 3, 206)!important;
-    outline: none!important;
-    padding: 0 1em!important;
-}
-.message input
-{
-    height: 150px!important;
-}
-#sf
-{
-    text-align: center!important;
-    display: block!important;
-    margin: 0 auto!important;
-    margin-top: 2em!important;
-    background:linear-gradient(rgb(11, 64, 100),rgb(19, 104, 214))!important;
-    border: none!important;
-    padding: 1em 4em!important;
+    width: 70%!important;
+    margin: 1em 0em;
+  }
+  .nav-item a{
     color: white!important;
-    font-size: 1.15em!important;
-    border-radius: 5px!important;
-    cursor:pointer!important;
+    width: 130px!important;
+    text-align: center!important;
+    font-size: 14pt;
+  }
+  #carouselimg img{
+    height: 680px!important;
+    filter: blur(15px);
+  }
+  .cardcontainer #Cem_Ozar{
+      position:absolute;
+      top: 20%;
+      bottom: 20%!important;
+      width: 379.5px!important;
+      height: 452px!important;
+      left: 20%;
+      filter: blur(0px)!important;
+      border-color: black!important;
+      border: 10px !important;
+      overflow: hidden!important;
+      display: inline-block;
+  }
+  .para{
+      color: white;
+      font-size: 150% ;
+      display: inline-block;
+      position:absolute;
+      top: 30%;
+      bottom: 35%!important;
+      width: 40%!important;
+      height: 452px!important;
+      right: 10%;
+  }
+  body
+  {
+      font-family: Arial, Helvetica, sans-serif!important;
+  }
+  .img-fluid {
+      height: 480px!important;
+  }
+  img{
+      object-fit: cover;
+  }
+  /* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: none; 
+    border-radius: 50px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(0, 0, 0,0.7); 
+    border-radius: 50px;
+    height: 20px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.4); 
+  }
+  @import url(//fonts.googleapis.com/css?family=Lato:400,900);
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+
+.info-card {
+    float: left;
+	margin: 10px;
+	-webkit-perspective: 600px;
 }
-#sf:hover
-{
-    background:linear-gradient(rgb(24, 163, 255),rgb(18, 70, 138))!important;
-    transform: translateY(-2px)!important;
+
+.front, .back {
+	background: #FFF;
+	border-radius: 10px;
+	transition: -webkit-transform 1s;
+	-webkit-transform-style: preserve-3d;
+	-webkit-backface-visibility: hidden;
+	border: 1px solid black;
 }
-.ig
-{
-    transform: scale(0.5)!important;
+
+.front {
+	overflow: hidden;
+	width: 250px;
+	height: 330px;
+	position: absolute;
+	z-index: 1;
 }
-.fb
-{
-    transform: scale(0.5)!important;
+
+.back {
+	padding: 20px;
+	padding-top: 0px;
+	width: 250px;
+	height: 330px;
+	-webkit-transform: rotateY(-180deg);
+	overflow: scroll;
 }
-.li
-{
-    transform: scale(0.5)!important;
+
+.info-card:hover .back {
+	-webkit-transform: rotateY(0);
 }
-.ig:hover
-{
-    transform: translate(-2px)!important;
-    transform: scale(0.65)!important;
+
+.info-card:hover .front {
+	-webkit-transform: rotateY(180deg);
 }
-.fb:hover
-{
-    transform: translate(-2px)!important;
-    transform: scale(0.65)!important;
+
+.card-image {
+width: 100%;
+height: 100%;
 }
-.li:hover
-{
-    transform: translate(-2px)!important;
-    transform: scale(0.65)!important;
+
+
+/* Social buttons */
+.social {
+	list-style: none;
+	padding: 0px;
+	margin-top: 25px;
+	text-align: center;
 }
-.handles
-{
-    margin-top: 2em!important;
-    display: flex!important;
-    justify-content: center!important;
-    transform: scale(0.8)!important;
-    width: 100%!important;
+
+.social a {
+		position: relative;
+		display: inline-block;
+		min-width: 40px;
+		padding: 10px 0px;
+		margin: 0px 5px;
+		overflow: hidden;
+		text-align: center;
+		background-color: rgb(215, 215, 215);
+		border-radius: 40px;
+	}
+
+
+a.social-icon {
+	text-decoration: none !important;
+	box-shadow: 0px 0px 1px rgb(51, 51, 51);
+	box-shadow: 0px 0px 1px rgba(51, 51, 51, 0.7);
+	}
+a.social-icon:hover {
+	color: rgb(255, 255, 255) !important;
 }
-.social-media
-{
-    display: flex!important;
-    justify-content: center!important;
-    margin-right: 4em!important;
-    border-right: 2px solid black!important;
-    width: 500px!important;
-    height: 100px!important;
+a.facebook {
+	color: rgb(59, 90, 154) !important;
 }
-.social-media div
-{
-    margin: 0 0.75em!important;
+a.facebook:hover {		
+	background-color: rgb(59, 90, 154) !important;
 }
-.contact-details
-{
-    margin-left: 4em!important;
-    margin-top: -1em!important;
+a.twitter {
+	color: rgb(45, 168, 225) !important;
 }
-.emaill svg
-{
-    transform: scale(0.5)!important;
+a.twitter:hover {
+	background-color: rgb(45, 168, 225) !important;
 }
-.phone svg
-{
-    transform: scale(0.5)!important;
+a.github {
+	color: rgb(51, 51, 51) !important;
 }
-hr{
-    border: 5px!important;
+a.github:hover {
+	background-color: rgb(51, 51, 51) !important;
 }
+.container1 {
+  height: 75%;
+  position: relative;
+  width: auto;
+  overflow: hidden;
+}
+.mb-3{
+    padding-bottom: -100px!important;
+
+}
+
+.image {
+  border: #0B3D59;
+  border-radius: 12px;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color:rgb(11, 61, 89, 0.8);
+  border-radius: 12px;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.container1:hover .overlay {
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  height: 80%;
+}
+.names{
+    text-align: center;
+    font-weight: 750;
+}
+.subtext{
+    text-align: center;
+    font-weight: 500;
+    line-height: 10%;
+}
+  iframe 
+  {
+      width: 100%!important;
+      height: 100%!important;
+      height: 500px!important;
+      display: inline-block!important;
+      margin: 0 auto!important;
+  }
+  .form
+  {
+      margin-left: 1em!important;
+      transform: scale(0.95)!important;
+  }
+  .contact_us .form h1
+  {
+      color: black!important;
+      text-align: center!important;
+      margin-bottom: 1em!important;
+  }
+  .contact_us .form h3
+  {
+      font-weight:400!important;
+      font-size:1.2em!important;
+      margin: 1em 0!important;
+  }
+  input
+  {
+      width: 100%!important;
+      height: 50px!important;
+      border-radius: 5px!important;
+      border: none!important;
+      margin: 1.5em 0!important;
+      background-color: transparent!important;
+      border: 2px solid rgb(0, 3, 206)!important;
+      outline: none!important;
+      padding: 0 1em!important;
+  }
+  .message input
+  {
+      height: 150px!important;
+  }
+  #sf
+  {
+      text-align: center!important;
+      display: block!important;
+      margin: 0 auto!important;
+      margin-top: 2em!important;
+      background:linear-gradient(rgb(11, 64, 100),rgb(19, 104, 214))!important;
+      border: none!important;
+      padding: 1em 4em!important;
+      color: white!important;
+      font-size: 1.15em!important;
+      border-radius: 5px!important;
+      cursor:pointer!important;
+  }
+  #sf:hover
+  {
+      background:linear-gradient(rgb(24, 163, 255),rgb(18, 70, 138))!important;
+      transform: translateY(-2px)!important;
+  }
+  .ig
+  {
+      transform: scale(0.5)!important;
+  }
+  .fb
+  {
+      transform: scale(0.5)!important;
+  }
+  .li
+  {
+      transform: scale(0.5)!important;
+  }
+  .ig:hover
+  {
+      transform: translate(-2px)!important;
+      transform: scale(0.65)!important;
+  }
+  .fb:hover
+  {
+      transform: translate(-2px)!important;
+      transform: scale(0.65)!important;
+  }
+  .li:hover
+  {
+      transform: translate(-2px)!important;
+      transform: scale(0.65)!important;
+  }
+  .handles
+  {
+      margin-top: 2em!important;
+      display: flex!important;
+      justify-content: center!important;
+      transform: scale(0.8)!important;
+      width: 100%!important;
+  }
+  .social-media
+  {
+      display: flex!important;
+      justify-content: center!important;
+      margin-right: 4em!important;
+      border-right: 2px solid black!important;
+      width: 500px!important;
+      height: 100px!important;
+  }
+  .social-media div
+  {
+      margin: 0 0.75em!important;
+  }
+  .contact-details
+  {
+      margin-left: 4em!important;
+      margin-top: -1em!important;
+  }
+  .emaill svg
+  {
+      transform: scale(0.5)!important;
+  }
+  .phone svg
+  {
+      transform: scale(0.5)!important;
+  }
+  hr{
+      border: 5px!important;
+  }
